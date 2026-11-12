@@ -42,6 +42,7 @@ jobs:
         run: |
           git config user.email "perf-html@mozilla.com"
           git config user.name "Firefox Profiler [bot]"
+          git remote add upstream git@github.com:firefox-devtools/profiler.git
 
       - name: Run l10n sync
         run: node ./bin/l10n-sync.js -y
